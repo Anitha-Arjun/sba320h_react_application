@@ -1,0 +1,26 @@
+/* CartSidebar.css */
+.cart-sidebar {
+  position: fixed; /* Ensure it's fixed */
+  top: 0;
+  right: -300px; /* Initially hidden off-screen */
+  width: 300px;
+  height: 100%; /* Full height */
+  background-color: #f8f9fa; /* Light background */
+  box-shadow: -2px 0 15px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease; /* Transition effect */
+  z-index: 1000; /* Ensure it’s above other elements */
+  padding: 20px;
+  overflow-y: auto; /* Allow scrolling if needed */
+  border-left: 2px solid #007bff; /* Accent border */
+}
+
+.cart-item-image {
+  width: 50px; /* Fixed width for consistency */
+  height: 50px; /* Fixed height for consistency */
+  object-fit: cover; /* Maintain aspect ratio without distortion */
+  margin-right: 10px; /* Space between image and text */
+  border-radius: 5px; /* Optional: Rounded corners for a softer look */
+}
+.cart-sidebar.open {
+  right: 0; /* Slide in when open */
+}
