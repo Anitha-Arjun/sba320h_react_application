@@ -1,5 +1,5 @@
 // CartSidebar.js
-import React, { useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import { CartContext } from "./CartContext";
 import "./CartSidebar.css";
 

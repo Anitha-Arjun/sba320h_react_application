@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ImageCarousel from "./components/ImageCarousel";
 import ProductList from "./components/ProductList";
 
 import { CartProvider } from "./components/CartContext";
@@ -16,7 +17,8 @@ const App = () => {
   return (
     <CartProvider>
       <div>
-        <h1>My E-commerce App</h1>
+        <h1>SPARKL</h1>
+        <ImageCarousel />
         <button onClick={toggleCart} className="cart-button">
           🛒 View Cart
         </button>

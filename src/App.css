@@ -51,7 +51,7 @@
   cursor: pointer;
   position: absolute; /* Position it as needed */
   top: 20px; /* Adjust top positioning */
-  right: 20px; /* Adjust right positioning */
+  right: 60px; /* Adjust right positioning */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for button */
   transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
 }

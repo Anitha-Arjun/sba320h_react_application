@@ -1,0 +1,22 @@
+.image-carousel {
+  overflow: hidden;
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  padding-left: 170px;
+  height: 300px; /* Set a height for the carousel */
+  position: relative;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 55%; /* Set width for images */
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+.carousel-image.show {
+  opacity: 1; /* Show the image */
+}
