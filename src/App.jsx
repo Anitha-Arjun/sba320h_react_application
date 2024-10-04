@@ -4,6 +4,7 @@ import ProductList from "./components/ProductList";
 
 import { CartProvider } from "./components/CartContext";
 import CartSidebar from "./components/CartSidebar";
+import HomeBanner from "./components/HomeBanner";
 
 import "./App.css";
 
@@ -17,7 +18,7 @@ const App = () => {
   return (
     <CartProvider>
       <div>
-        <h1>SPARKL</h1>
+        <HomeBanner />
         <ImageCarousel />
         <button onClick={toggleCart} className="cart-button">
           🛒 View Cart

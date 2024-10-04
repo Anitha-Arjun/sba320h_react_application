@@ -1,8 +1,7 @@
-// Product.js
 import React, { useContext } from "react";
 import { CartContext } from "./CartContext";
 
-import "./Product.css"; // Keep the same CSS for individual product cards
+import "./Product.css";
 
 const Product = ({ product }) => {
   const { addToCart } = useContext(CartContext);

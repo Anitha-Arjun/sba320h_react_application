@@ -1,4 +1,3 @@
-// CartContext.js
 import React, { createContext, useState } from "react";
 
 export const CartContext = createContext();
@@ -10,14 +9,12 @@ export const CartProvider = ({ children }) => {
     setCart((prevCart) => {
       const existingProduct = prevCart.find((item) => item.id === product.id);
       if (existingProduct) {
-        // If the product already exists in the cart, increase the quantity
         return prevCart.map((item) =>
           item.id === product.id
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       } else {
-        // If the product is new, add it with a quantity of 1
         return [...prevCart, { ...product, quantity: 1 }];
       }
     });

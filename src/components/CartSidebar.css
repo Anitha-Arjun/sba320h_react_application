@@ -1,26 +1,25 @@
-/* CartSidebar.css */
 .cart-sidebar {
-  position: fixed; /* Ensure it's fixed */
+  position: fixed;
   top: 0;
-  right: -300px; /* Initially hidden off-screen */
+  right: -300px;
   width: 300px;
-  height: 100%; /* Full height */
-  background-color: #f8f9fa; /* Light background */
+  height: 100%;
+  background-color: #f8f9fa;
   box-shadow: -2px 0 15px rgba(0, 0, 0, 0.2);
-  transition: right 0.3s ease; /* Transition effect */
-  z-index: 1000; /* Ensure it’s above other elements */
+  transition: right 0.3s ease;
+  z-index: 1000;
   padding: 20px;
-  overflow-y: auto; /* Allow scrolling if needed */
-  border-left: 2px solid #007bff; /* Accent border */
+  overflow-y: auto;
+  border-left: 2px solid #007bff;
 }
 
 .cart-item-image {
-  width: 50px; /* Fixed width for consistency */
-  height: 50px; /* Fixed height for consistency */
-  object-fit: cover; /* Maintain aspect ratio without distortion */
-  margin-right: 10px; /* Space between image and text */
-  border-radius: 5px; /* Optional: Rounded corners for a softer look */
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 .cart-sidebar.open {
-  right: 0; /* Slide in when open */
+  right: 0;
 }

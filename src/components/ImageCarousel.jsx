@@ -14,7 +14,7 @@ const ImageCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2500); // Change image every 1500ms
+    }, 2500);
 
     return () => clearInterval(interval);
   }, []);
