@@ -4,3 +4,6 @@ View Cart on the right top will display option to view the items in card, update
 
 Application Deployed in NETLIFY
 https://fantastic-alfajores-0d68f2.netlify.app/
+
+Wireframe
+![alt text](Wireframe-sparkl.png)
